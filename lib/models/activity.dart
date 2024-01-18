@@ -6,8 +6,8 @@ class Activity {
 
   factory Activity.fromJson(Map<String, dynamic> json) {
     return Activity(
-      activity: json["activity"] as String,
-      price: double.parse(json["price"].toString()),
+      activity: json["activity"],
+      price: json["price"],
     );
   }
 }
